@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire d'Inscription</title>
+</head>
+<body>
+    <h2>Formulaire d'Inscription</h2>
+    <form action="traitement.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="email">Adresse E-mail :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="inscription">Numéro d’inscription :</label>
+        <input type="text" id="inscription" name="inscription" required><br><br>
+
+        <label for="filiere">Filière :</label>
+        <input type="text" id="filiere" name="filiere" required><br><br>
+
+        <label for="livre">Titre de livre choisi pour la compétition :</label>
+        <input type="text" id="livre" name="livre" required><br><br>
+
+        <label for="pourquoi">Pourquoi avez-vous choisi ce livre ? (Optionnel) :</label><br>
+        <textarea id="pourquoi" name="pourquoi" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="accepter" name="accepter" required>
+        <label for="accepter">J'accepte de respecter les règles de la compétition et de soumettre mes réponses au questionnaire avant la date limite.</label><br><br>
+
+        <input type="checkbox" id="recevoir" name="recevoir">
+        <label for="recevoir">J'accepte de recevoir des communications liées à cette compétition par e-mail.</label><br><br>
+
+        <label for="signature">Signature de l’étudiant :</label>
+        <input type="text" id="signature" name="signature" required><br><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
